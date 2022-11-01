@@ -1,0 +1,48 @@
+@use "./variables" as *;
+
+// Font import
+
+/* outfit-500 - latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+       url('../fonts/outfit-v6-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/outfit-v6-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* outfit-700 - latin */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('../fonts/outfit-v6-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/outfit-v6-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+////
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 1px solid red;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $color-bg-main;
+  font-family: "Outfit", sans-serif;
+  min-height: 100vh;
+}
+
+button {
+  border: none;
+}
